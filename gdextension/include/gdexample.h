@@ -18,7 +18,7 @@ public:
 	GDExample();
 	~GDExample();
 
-	void _process(double delta) override;
+ 	void move(double delta);
 };
 
 }

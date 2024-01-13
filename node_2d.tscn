@@ -1,9 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://3arlvoj7o7sc"]
+[gd_scene load_steps=3 format=3 uid="uid://3arlvoj7o7sc"]
 
 [ext_resource type="Texture2D" uid="uid://duq8e7jstdm8y" path="res://icon.svg" id="1_c8lp8"]
+[ext_resource type="Script" path="res://GDExample2.gd" id="2_mljbe"]
 
 [node name="Node2D" type="Node2D"]
 
+[node name="Camera2D" type="Camera2D" parent="."]
+
 [node name="GDExample" type="GDExample" parent="."]
-position = Vector2(17.2799, 8.27012)
+position = Vector2(0.222037, 7.67782)
 texture = ExtResource("1_c8lp8")
+script = ExtResource("2_mljbe")
