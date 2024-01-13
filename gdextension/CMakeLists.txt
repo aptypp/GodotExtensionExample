@@ -12,3 +12,6 @@ add_library(my_extension_lib SHARED ${SRC} ${HEADERS})
 target_link_libraries(my_extension_lib PRIVATE libgodot-cpp.linux.release.64.a)
 
 target_include_directories(my_extension_lib PUBLIC include godot-cpp/include godot-cpp/build/gen/include godot-cpp/gdextension)
+
+set_target_properties(my_extension_lib PROPERTIES
+         LIBRARY_OUTPUT_DIRECTORY ../bin)
